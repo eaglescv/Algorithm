@@ -1,4 +1,5 @@
-#include "stdio.h"
+#include <stdio.h>
+#include <string.h>
 
 int item[99] = { 0, };
 
@@ -17,9 +18,34 @@ int GaussAlgorithm()
 	return gaussTotal;
 }
 
-void main()
+int IsPalindrome(char* inputString)
 {
-	int gaussTotal = GaussAlgorithm();
-	printf("%d\n", gaussTotal);
+	int index;
+	int length = strlen(inputString);
+	int testEndingIndex = length / 2;
+	for (index = 0; index < testEndingIndex; index++)
+	{
+		if (inputString[index] != inputString[length - 1 - index])
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
+
+void main(int argc, char** args)
+{
+	//int gaussTotal = GaussAlgorithm();
+	//printf("%d\n", gaussTotal);
+
+	int result = IsPalindrome(args[1]);
+	if (result)
+	{
+		printf("it is palindrome\n");
+	}
+	else
+	{
+		printf("it is NOT palindrome\n");
+	}
 	getchar();
 }
