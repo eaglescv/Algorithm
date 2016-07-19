@@ -23,9 +23,10 @@ int IsPalindrome(char* inputString)
 	int index;
 	int length = strlen(inputString);
 	int testEndingIndex = length / 2;
+	int preindex = length - 1;
 	for (index = 0; index < testEndingIndex; index++)
 	{
-		if (inputString[index] != inputString[length - 1 - index])
+		if (inputString[index] != inputString[preindex - index])
 		{
 			return 0;
 		}
