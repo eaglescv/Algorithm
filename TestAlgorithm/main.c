@@ -81,7 +81,5 @@ void main(int argc, char** args)
 	//	printf("it is NOT palindrome\n");
 	//}
 
-	//DoomsDay doomsday;
-
 	getchar();
 }
