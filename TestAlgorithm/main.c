@@ -66,11 +66,43 @@ int GetDayOfTheWeek(int years, int month, int day)
 	return result;
 }
 
-void main(int argc, char** args)
+int IsInclude(char* src, char* dest)
 {
+	int length1 = strlen(src);
+	int length2 = strlen(dest);
+
+	if (length1 <= 0 || length2 <= 0)
+	{
+		return 0;
+	}
+
+	int same = 1;
+	for (int i = 0; i <= length1 - length2; ++i)
+	{
+		same = 1;
+		for (int j = 0; j < length2; ++j)
+		{
+			if (src[i + j] != dest[j])
+			{
+				same = 0;
+				break;
+			}
+		}
+		if (same == 1)
+		{
+			return 1;
+		}
+	}
+	return 0;
+}
+
+//void main(int argc, char** args)
+//{
+	//가우스 알고리즘
 	//int gaussTotal = GaussAlgorithm();
 	//printf("%d\n", gaussTotal);
 
+	//팰린드롬 알고리즘
 	//int result = IsPalindrome(args[1]);
 	//if (result)
 	//{
@@ -80,9 +112,14 @@ void main(int argc, char** args)
 	//{
 	//	printf("it is NOT palindrome\n");
 	//}
+	
+	//문자열 포함 체크 함수
+	//int isTrue = IsInclude("ABCD", "BA");
+	//printf("%d", isTrue);
 
-	getchar();
-}
+//	getchar();
+//}
+
 
 // 달력과 요일
 #include <stdio.h>
