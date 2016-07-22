@@ -130,15 +130,17 @@ int day, mon, year;
 int remain;
 char week[7][3] = { "일", "월", "화", "수", "목", "금", "토" };
 int month[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-void main(){
+void main()
+{
 	int num;
-	char restart;
+	int restart;
 	do
 	{
 		printf("1.달력  2.요일\n");
 		printf("번호 : ");
 		scanf_s("%d", &num);
-		if (num == 1){
+		if (num == 1)
+		{
 			printf("연도 입력 : ");
 			scanf_s("%d", &year);
 			printf("달 입력 : ");
@@ -147,7 +149,8 @@ void main(){
 			calendar(year, mon);
 			calendar_p();
 		}
-		else if (num == 2){
+		else if (num == 2)
+		{
 			printf("연도 입력 : ");
 			scanf_s("%d", &year);
 			printf("달 입력 : ");
@@ -158,9 +161,9 @@ void main(){
 			printf("\n   %d일은 %s요일입니다.\n", day, week[i]);
 		}
 		fflush(stdin);
-		printf("다시 입력 하시겠습니까 (Y/N) : ");
-		scanf_s("%c", &restart);
-	} while (restart == 'Y' || restart == 'y');
+		printf("다시 입력 하시겠습니까 (yes = 1/ no = 0) : ");
+		scanf_s("%d", &restart);
+	} while (restart >= 1);
 }
 /*
 
@@ -188,14 +191,17 @@ void main(){
 
 */
 
-void calendar(int year, int mon){
+void calendar(int year, int mon)
+{
 	int allday;
 	//윤년 계산과 그달의 1일의 요일계산
 
 	allday = ((year - 1) + (year - 1) / 4 - (year - 1) / 100 + (year - 1) / 400);
 
-	for (i = 0; i<mon; i++){
-		if (i == 1 && ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)){
+	for (i = 0; i<mon; i++)
+	{
+		if (i == 1 && ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0))
+		{
 			month[1] += 1;
 		}
 		allday += month[i];
@@ -205,17 +211,22 @@ void calendar(int year, int mon){
 	i = (remain + day - 1) % 7; //요일계산
 }
 
-void calendar_p(){
+void calendar_p()
+{
 	int count = 1;
-	printf("\n\n  %d년 %d월\n", year, mon);
+	printf("\n\n  %d년 %d월\n", year, mon); 
 	printf("  일  월  화  수  목  금  토\n");
-	for (i = 0; i<6; i++){
-		for (j = 0; j<7; j++){
-			if (i == 0 && j<remain){
+	for (i = 0; i<6; i++)
+	{
+		for (j = 0; j<7; j++)
+		{
+			if (i == 0 && j<remain)
+			{
 				printf("    ");
 				continue;
 			}
-			else if (count >= month[mon - 1] + 1){
+			else if (count >= month[mon - 1] + 1)
+			{
 				break;
 			}
 			printf("%4d", count);
