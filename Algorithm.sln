@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestAlgorithm", "TestAlgori
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JeffSomers", "JeffSomers\JeffSomers.vcxproj", "{ABFCA515-75BB-4E4E-AD71-660D022C2862}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MazeSolver미로찾기(백트래킹)", "MazeSolver미로찾기(백트래킹)\MazeSolver미로찾기(백트래킹).vcxproj", "{0A13BBB6-B3E1-446D-B6CF-F71B4C0DC5B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{ABFCA515-75BB-4E4E-AD71-660D022C2862}.Debug|Win32.Build.0 = Debug|Win32
 		{ABFCA515-75BB-4E4E-AD71-660D022C2862}.Release|Win32.ActiveCfg = Release|Win32
 		{ABFCA515-75BB-4E4E-AD71-660D022C2862}.Release|Win32.Build.0 = Release|Win32
+		{0A13BBB6-B3E1-446D-B6CF-F71B4C0DC5B1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0A13BBB6-B3E1-446D-B6CF-F71B4C0DC5B1}.Debug|Win32.Build.0 = Debug|Win32
+		{0A13BBB6-B3E1-446D-B6CF-F71B4C0DC5B1}.Release|Win32.ActiveCfg = Release|Win32
+		{0A13BBB6-B3E1-446D-B6CF-F71B4C0DC5B1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
