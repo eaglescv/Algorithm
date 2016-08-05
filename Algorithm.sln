@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "괄호", "괄호\괄호.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "쇠막대기", "쇠막대기\쇠막대기.vcxproj", "{85E0DDE2-9B6B-4EDB-8E19-34769F7156B0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "에디터", "에디터\에디터.vcxproj", "{7758BCC7-627E-450F-99A5-933690A09D45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,6 +41,10 @@ Global
 		{85E0DDE2-9B6B-4EDB-8E19-34769F7156B0}.Debug|Win32.Build.0 = Debug|Win32
 		{85E0DDE2-9B6B-4EDB-8E19-34769F7156B0}.Release|Win32.ActiveCfg = Release|Win32
 		{85E0DDE2-9B6B-4EDB-8E19-34769F7156B0}.Release|Win32.Build.0 = Release|Win32
+		{7758BCC7-627E-450F-99A5-933690A09D45}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7758BCC7-627E-450F-99A5-933690A09D45}.Debug|Win32.Build.0 = Debug|Win32
+		{7758BCC7-627E-450F-99A5-933690A09D45}.Release|Win32.ActiveCfg = Release|Win32
+		{7758BCC7-627E-450F-99A5-933690A09D45}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
