@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <iostream>
 #include <string>
 #include <stack>
 #include <queue>
@@ -6,11 +7,18 @@
 #pragma warning(disable:4996)
 using namespace std;
 queue<string> CommandQueue;
+stack<char> LeftStack;
+stack<char> RightStack;
 
 int main()
 {
-	char str[100000] = "abcd";
-	//scanf("%s", &str);
+	string str = "abcd";
+	//cin >> str;
+
+	for (int i = 0; i < (int)str.size(); i++)
+	{
+		LeftStack.push(str[i]);
+	}
 
 	int commandCount = 0;
 	scanf("%d\n", &commandCount);
@@ -29,19 +37,27 @@ int main()
 	while (false == CommandQueue.empty())
 	{
 		string& command = CommandQueue.front();
+		char val;
 		switch (command[0])
 		{
 		case 'L':
-			printf("L\n");
+			val = LeftStack.top();
+			RightStack.push(val);
+			LeftStack.pop();
 			break;
 		case 'D':
-			printf("D\n");
+			val = RightStack.top();
+			LeftStack.push(val);
+			RightStack.pop();
 			break;
 		case 'B':
-			printf("B\n");
+			LeftStack.pop();
 			break;
 		case 'P':
-			printf("P\n");
+			if (command[2])
+			{
+				LeftStack.push(command[2]);
+			}
 			break;
 		default:
 			break;
@@ -49,6 +65,7 @@ int main()
 		CommandQueue.pop();
 	}
 	
+	int i = 0;
 	//return 0;
 	getchar();
 }
