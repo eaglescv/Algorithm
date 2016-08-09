@@ -1,5 +1,6 @@
-#include <stdio.h>
+#pragma warning(disable:4996)
 
+#include <stdio.h>
 int d[1001];
 
 int sum(int n)
