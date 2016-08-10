@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1로만들기", "1로만들
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2xn타일링", "2xn타일링\2xn타일링.vcxproj", "{A75F6A32-496C-4DAB-983D-ED0CE203A52E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1,2,3더하기", "1,2,3더하기\1,2,3더하기.vcxproj", "{FCEA3999-4806-4945-96D7-C1843397738C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,16 @@ Global
 		{A75F6A32-496C-4DAB-983D-ED0CE203A52E}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{A75F6A32-496C-4DAB-983D-ED0CE203A52E}.Release|Win32.ActiveCfg = Release|Win32
 		{A75F6A32-496C-4DAB-983D-ED0CE203A52E}.Release|Win32.Build.0 = Release|Win32
+		{FCEA3999-4806-4945-96D7-C1843397738C}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{FCEA3999-4806-4945-96D7-C1843397738C}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{FCEA3999-4806-4945-96D7-C1843397738C}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{FCEA3999-4806-4945-96D7-C1843397738C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FCEA3999-4806-4945-96D7-C1843397738C}.Debug|Win32.Build.0 = Debug|Win32
+		{FCEA3999-4806-4945-96D7-C1843397738C}.Release|Any CPU.ActiveCfg = Release|Win32
+		{FCEA3999-4806-4945-96D7-C1843397738C}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{FCEA3999-4806-4945-96D7-C1843397738C}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{FCEA3999-4806-4945-96D7-C1843397738C}.Release|Win32.ActiveCfg = Release|Win32
+		{FCEA3999-4806-4945-96D7-C1843397738C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
