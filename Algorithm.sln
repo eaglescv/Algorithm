@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestAlgorithm", "TestAlgorithm\TestAlgorithm.vcxproj", "{318A9292-180D-4CFA-B2FF-0E1AD6BCC048}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1,2,3더하기", "1,2,3더하기\1,2,3더하기.vcxproj", "{FCEA3999-4806-4945-96D7-C1843397738C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReversePrint", "ReversePrint\ReversePrint.vcxproj", "{236C5FDF-7A24-4C10-82BF-C65719BEDB33}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "랜선자르기", "랜선자르기\랜선자르기.vcxproj", "{6986DC01-5501-41F9-B2ED-A4531A50A263}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +133,16 @@ Global
 		{236C5FDF-7A24-4C10-82BF-C65719BEDB33}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{236C5FDF-7A24-4C10-82BF-C65719BEDB33}.Release|Win32.ActiveCfg = Release|Win32
 		{236C5FDF-7A24-4C10-82BF-C65719BEDB33}.Release|Win32.Build.0 = Release|Win32
+		{6986DC01-5501-41F9-B2ED-A4531A50A263}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6986DC01-5501-41F9-B2ED-A4531A50A263}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{6986DC01-5501-41F9-B2ED-A4531A50A263}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{6986DC01-5501-41F9-B2ED-A4531A50A263}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6986DC01-5501-41F9-B2ED-A4531A50A263}.Debug|Win32.Build.0 = Debug|Win32
+		{6986DC01-5501-41F9-B2ED-A4531A50A263}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6986DC01-5501-41F9-B2ED-A4531A50A263}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{6986DC01-5501-41F9-B2ED-A4531A50A263}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{6986DC01-5501-41F9-B2ED-A4531A50A263}.Release|Win32.ActiveCfg = Release|Win32
+		{6986DC01-5501-41F9-B2ED-A4531A50A263}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
