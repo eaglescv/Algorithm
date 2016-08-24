@@ -7,31 +7,24 @@ int K = 0;
 int N = 0;	//필요한 랜선 개수
 vector<int> vLength;
 
-int go(int X)
+bool check(long long x)
 {
 	int sum = 0;
 	int size = (int)vLength.size();
 	for (int i = 0; i < size; i++)
 	{
-		sum += vLength[i] / X;
+		sum += vLength[i] / x;
 	}
-
-	if (sum < N)
-	{
-		return -1;
-	}
-	else if (sum > N)
-	{
-		return 1;
-	}
-	return 0;
+	
+	return sum >= N;
 }
 
 int main()
 {
-	int X = 10;
-	int left = 0;
-	int right = X;
+	long long mid = 0;
+	long long right = 0;
+	long long left = 1;
+	long long result = 0;
 
 	scanf("%d %d", &K, &N);
 	for (int i = 0; i < K; i++)
@@ -39,30 +32,29 @@ int main()
 		int length = 0;
 		scanf("%d", &length);
 		vLength.push_back(length);
+		if (right < length)
+		{
+			right = length;
+		}
 	}
 
-	while (1)
+	while (left <= right)
 	{
-		int result = go(X);
-		if (result == 0)
+		mid = (left + right) / 2;
+		if (check(mid))
 		{
-			break;
-		}
-		
-		if (-1 == result)
-		{
-			left = (left + right) / 2;
-			right = X -1;
-			X = left;
+			if (result < mid)
+			{
+				result = mid;
+			}
+			left = mid + 1;
 		}
 		else
 		{
-			right += (left + right) / 2;
-			left = X + 1;
-			X = right;
+			right = mid - 1;
 		}
 	}
 	
-	printf("%d", X);
+	printf("%d", result);
 	return 0;
 }
