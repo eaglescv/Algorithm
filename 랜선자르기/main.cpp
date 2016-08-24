@@ -9,7 +9,7 @@ vector<int> vLength;
 
 bool check(long long x)
 {
-	int sum = 0;
+	long long sum = 0;
 	int size = (int)vLength.size();
 	for (int i = 0; i < size; i++)
 	{
