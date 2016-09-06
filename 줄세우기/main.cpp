@@ -38,7 +38,7 @@ int main()
 		int x = q.front();
 		q.pop();
 		printf("%d ", x);
-		for (int i = 0; (int)i < S[x].size(); i++)
+		for (int i = 0; i < (int)S[x].size(); i++)
 		{
 			int y = S[x][i];
 			ind[y] -= 1;
