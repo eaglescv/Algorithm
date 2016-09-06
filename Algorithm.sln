@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "랜선자르기", "랜선�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "줄세우기", "줄세우기\줄세우기.vcxproj", "{9366011A-0BC8-4112-A91A-A04F766437C9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "문자열함수", "문자열함수\문자열함수.vcxproj", "{4555F231-4AB0-4C21-8072-D8A385F674B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +157,16 @@ Global
 		{9366011A-0BC8-4112-A91A-A04F766437C9}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{9366011A-0BC8-4112-A91A-A04F766437C9}.Release|Win32.ActiveCfg = Release|Win32
 		{9366011A-0BC8-4112-A91A-A04F766437C9}.Release|Win32.Build.0 = Release|Win32
+		{4555F231-4AB0-4C21-8072-D8A385F674B4}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{4555F231-4AB0-4C21-8072-D8A385F674B4}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{4555F231-4AB0-4C21-8072-D8A385F674B4}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{4555F231-4AB0-4C21-8072-D8A385F674B4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4555F231-4AB0-4C21-8072-D8A385F674B4}.Debug|Win32.Build.0 = Debug|Win32
+		{4555F231-4AB0-4C21-8072-D8A385F674B4}.Release|Any CPU.ActiveCfg = Release|Win32
+		{4555F231-4AB0-4C21-8072-D8A385F674B4}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{4555F231-4AB0-4C21-8072-D8A385F674B4}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{4555F231-4AB0-4C21-8072-D8A385F674B4}.Release|Win32.ActiveCfg = Release|Win32
+		{4555F231-4AB0-4C21-8072-D8A385F674B4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

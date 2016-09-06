@@ -6,12 +6,7 @@
 char* ReversePrint(char* str)
 {
 	int length = strlen(str);
-	//for (int i = 0; i < length; ++i)
-	//{
-	//	printf("%c", str[i]);
-	//}
-	//printf("\n");
-	
+
 	int i = 0;
 	char ss[100] = { 0, };
 	for ( ; i < length; ++i)
