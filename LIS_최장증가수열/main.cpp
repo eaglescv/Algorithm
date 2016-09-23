@@ -32,7 +32,7 @@ int main()
 {
 	int n, MAX = 0, i, j;
 	int data[10000] = { 0, };
-	int LS[10000] = { 0, };
+	int D[10000] = { 0, };
 
 	//ifstream in;
 	//ofstream out;
@@ -46,20 +46,20 @@ int main()
 
 	for (i = 1; i <= n; ++i)
 	{
-		LS[i] = 1;
+		D[i] = 1;
 		for (j = 1; j <= i; ++j)
 		{
-			if ((data[j] < data[i]) && (LS[j] + 1 > LS[i]))
+			if ((data[i] > data[j]) && (D[i] < D[j] + 1))
 			{
-				LS[i] = LS[j] + 1;
+				D[i] = D[j] + 1;
 			}
 		}
 	}
 
 	for (i = 1; i <= n; ++i)
 	{
-		if (MAX < LS[i])
-			MAX = LS[i];
+		if (MAX < D[i])
+			MAX = D[i];
 	}
 
 	cout << MAX;
